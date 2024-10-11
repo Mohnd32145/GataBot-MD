@@ -148,7 +148,7 @@ let handler = async (m, { conn, args, usedPrefix, text, command }) => {
 
 handler.help = ["play"].map(v => v + " <formato> <búsqueda o enlace>")
 handler.tags = ["downloader"]
-handler.command = ['play', 'play2', 'mp3', 'mp4', 'mp3doc', 'mp4doc']
+handler.command = ['play', 'شغل', 'mp3', 'mp4', 'mp3doc', 'mp4doc']
 handler.register = true 
 handler.star = 1
 
