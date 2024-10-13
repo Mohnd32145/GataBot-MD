@@ -8,7 +8,7 @@ let pesan = args.join` `
 let oi = `${lenguajeGB.smsAddB5()} _${pesan}_`
 
 let textoA = 
-`*⊱ ──── 《.⋅ 🐈 ⋅.》 ──── ⊰*
+`*⊱ ──── 《.⋅ يستخدم هذا الأمر في الحلات الطارئة فقت ⋅.》 ──── ⊰*
 ෆ ${lenguajeGB.smsAddB3()}
 ෆ ${oi}
 *⊱ ──── 《.⋅ ${vs} ⋅.》 ──── ⊰*`
@@ -20,6 +20,6 @@ let textoB =
 await conn.sendFile(m.chat, pp, 'error.jpg', textoA + textoB, m, false, { mentions: [...groupAdmins.map(v => v.id), owner] })
 //await conn.sendButton(m.chat, textoA, textoB, pp, [[lenguajeGB.smsConMenu(), `.menu`]], m, { mentions: [...groupAdmins.map(v => v.id), owner] })
 }
-handler.command = /^(admins|@admins|dmins)$/i
+handler.command = /^(admins|@admins|المشرفين)$/i
 handler.group = true
 export default handler
